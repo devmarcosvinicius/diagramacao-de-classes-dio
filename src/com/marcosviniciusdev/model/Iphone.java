@@ -1,6 +1,10 @@
 package com.marcosviniciusdev.model;
 
-public class Iphone {
+import com.marcosviniciusdev.interfaces.AparelhoTelefonico;
+import com.marcosviniciusdev.interfaces.NavegadorInternet;
+import com.marcosviniciusdev.interfaces.ReprodutorMusical;
+
+public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet {
 
     private String cor;
     private int memoria;
@@ -24,5 +28,41 @@ public class Iphone {
 
     public void setMemoria(int memoria) {
         this.memoria = memoria;
+    }
+
+    public void ligar() {
+
+    }
+
+    public void atender() {
+
+    }
+
+    public void iniciarCorreioVoz() {
+
+    }
+
+    public void exibirPagina() {
+
+    }
+
+    public void adicionarNovaAba() {
+
+    }
+
+    public void atualizarPagina() {
+
+    }
+
+    public void tocar() {
+
+    }
+
+    public void pausar() {
+
+    }
+
+    public void selecionarMusica() {
+
     }
 }
