@@ -8,11 +8,11 @@ public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
 
     private String cor;
     private int memoria;
-
-    public Iphone(String cor, int memoria) {
-        this.cor = cor;
-        this.memoria = memoria;
-    }
+    private boolean isReproduzindoMusica;
+    private String nomeMusica;
+    private boolean isLigado;
+    private boolean isChamada;
+    private boolean isCorreioVoz;
 
     public String getCor() {
         return cor;
@@ -30,38 +30,87 @@ public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
         this.memoria = memoria;
     }
 
+    public boolean isReproduzindoMusica() {
+        return isReproduzindoMusica;
+    }
+
+    public void setReproduzindoMusica(boolean reproduzindoMusica) {
+        isReproduzindoMusica = reproduzindoMusica;
+    }
+
+    public String getNomeMusica() {
+        return nomeMusica;
+    }
+
+    public void setNomeMusica(String nomeMusica) {
+        this.nomeMusica = nomeMusica;
+    }
+
+    public boolean isLigado() {
+        return isLigado;
+    }
+
+    public void setLigado(boolean ligado) {
+        isLigado = ligado;
+    }
+
+    public boolean isChamada() {
+        return isChamada;
+    }
+
+    public void setChamada(boolean chamada) {
+        isChamada = chamada;
+    }
+
+    public boolean isCorreioVoz() {
+        return isCorreioVoz;
+    }
+
+    public void setCorreioVoz(boolean correioVoz) {
+        isCorreioVoz = correioVoz;
+    }
+
+    @Override
     public void ligar() {
 
     }
 
+    @Override
     public void atender() {
 
     }
 
+    @Override
     public void iniciarCorreioVoz() {
 
     }
 
+    @Override
     public void exibirPagina() {
 
     }
 
+    @Override
     public void adicionarNovaAba() {
 
     }
 
+    @Override
     public void atualizarPagina() {
 
     }
 
+    @Override
     public void tocar() {
 
     }
 
+    @Override
     public void pausar() {
 
     }
 
+    @Override
     public void selecionarMusica() {
 
     }
