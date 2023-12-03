@@ -1,4 +1,4 @@
-package com.marcosviniciusdev.model;
+package com.marcosviniciusdev.models;
 
 import com.marcosviniciusdev.interfaces.AparelhoTelefonico;
 import com.marcosviniciusdev.interfaces.NavegadorInternet;
